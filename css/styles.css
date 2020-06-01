@@ -1,0 +1,126 @@
+/* ================================= 
+  Base Styles
+==================================== */
+* {
+    font-family: "courier", sans-serif;
+}
+
+body {
+    align-items: center;
+    background-color: #EEF0F4;
+}
+
+a:link {
+    text-decoration: none;
+    color: #1C1A1D;
+  }
+  
+  a:visited {
+    text-decoration: none;
+    color: #1C1A1D;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: #3E3A40;
+  }
+  
+  a:active {
+    text-decoration: underline;
+    color: #877E8B;
+  }
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 0px 1px 5px black;
+    background-color: #1C1A1D;
+    font-size: 0.75em;    
+    padding: 1%;
+}
+
+h1 {
+    padding: .5em;
+    size: 30%;
+}
+
+ul {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-evenly;
+    margin: 0em;
+    padding: 0em;
+}
+
+li {
+    display: block;
+    /* flex: 0 1 auto; */
+    list-style-type: none;
+    text-decoration: none;
+}
+
+li:hover {
+    /* Shakey Links */
+    animation: shake 0.25s;
+
+    /* When the animation is finished, stop*/
+    animation-iteration-count: initial;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+
+/* ================================= 
+  Class Styles
+==================================== */
+.head-img {
+    max-width: 105px;
+    border-radius: 50%;
+    border: 2px solid white;
+    transition: all .5s;
+}
+
+.head-img:hover {
+    /* Shakey main image */
+    animation: shake 0.25s;
+    animation-iteration-count: initial;
+  }
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+.menu-bar {
+    background-color: whitesmoke;
+    text-transform: uppercase;
+    box-shadow: 0px 1px 10px black;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
