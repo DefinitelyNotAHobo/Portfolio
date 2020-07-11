@@ -18,6 +18,11 @@ h1 {
   text-shadow: 2px 2px 5px black;
 }
 
+h3 {
+  margin-block-start: .5em;
+  margin-block-end: .1em;
+}
+
 nav {
   flex-direction: row;
   text-align: center;
@@ -33,6 +38,26 @@ a {
 
 img {
   align-self: center;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+label.light {
+  font-weight: 300;
+  display: inline;
 }
 
 footer {
@@ -137,6 +162,10 @@ li:hover {
   margin: 1em;
   max-width: 30vw;
   align-self: flex-start;
+}
+
+.faq:not(:last-child) {
+  border: 1px solid black;
 }
 
 .mm-logo {
