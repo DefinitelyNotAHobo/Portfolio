@@ -166,7 +166,6 @@ footer {
 
 .main-img {
   max-width: 50vw;
-  margin-bottom: 1em;
 }
 
 .action-img {
@@ -227,6 +226,10 @@ footer {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+}
+
+.prev {
+  left: 0;
 }
 
 /* Position the "next button" to the right */
@@ -368,7 +371,7 @@ form small {
   
   .container {
     height: 64vh;
-    width: 70%;
+    width: 80%;
     max-width: 1000px;
     margin: 0 auto;
   }
