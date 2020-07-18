@@ -29,7 +29,7 @@
                 <h2>Ask Mothman a question</h2>
                 <p>Got a question for Mothman? Enlightenment and clarity awaits. But in all honesty, ask anything you want, but don't enter any personal details. Mothman ain't spending any money on cyber security.
                 </p>
-                <form action="/questsubmit" method="post" id="questsubmit">
+                <form action="/questsubmit" method="post" id="questsubmit" class="bottom">
                     <small></small>
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="user_name" placeholder="eg: John K."><br><br>
@@ -41,14 +41,15 @@
                     <textarea id="question" name="user_question" placeholder="eg: Whatcha doing?"></textarea><br>
                     <input type="submit" value="Submit">
                 </form>
+                <br>
                 <script src="js/questsubmit.js"></script>
             </div>
         </main>
+        <footer role="contentinfo" class="flex">
+            <img src="img/mm-logo.png" class="mm-logo flex">
+            <p>&#169; 2020 MM Industries. All rights reserved.
+            </p>
+        </footer>
     </div>
-    <footer role="contentinfo" class="flex">
-        <img src="img/mm-logo.png" class="mm-logo flex">
-        <p>&#169; 2020 MM Industries. All rights reserved.
-        </p>
-    </footer>
 </body>
 </html>
