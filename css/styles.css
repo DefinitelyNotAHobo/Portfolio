@@ -110,8 +110,8 @@ footer {
 
 .btn {
   margin: 5px;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 4em;
+  padding-right: 4em;
   justify-content: space-between;
   cursor: pointer;
   width: 100%;
@@ -173,6 +173,7 @@ footer {
   margin: 1em;
   max-width: 30vw;
   align-self: flex-start;
+  border-radius: 5%;
 }
 
 .mm-logo {
@@ -180,6 +181,7 @@ footer {
   max-height: 20px;
   margin: 10px;
 }
+
 /* ... */
 
 .site-wrap {
@@ -318,7 +320,7 @@ form small {
   Media Queries
 ==================================== */
 
-@media (min-width: 769px) {
+@media (min-width: 800px) {
   .flex-nav {
     display: flex;
     flex-direction: row;
@@ -331,8 +333,8 @@ form small {
     padding: .25em;
     justify-content: space-between;
     cursor: pointer;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 3em;
+    padding-right: 3em;
     text-align: center;
     text-transform: uppercase;
   }
