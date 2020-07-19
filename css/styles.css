@@ -440,58 +440,6 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 }
 
 
-/* form input[type="text"],
-form input[type="email"],
-form textarea {
-  outline: none;
-  box-sizing: border-box;
-  width: 70%;
-  background: #fff;
-  margin-bottom: 2%;
-  border: 1px solid #ccc;
-  padding: 3%;
-  color: #555;
-}
-
-form input[type="text"]:focus {
-  box-shadow: 0 0 5px #f0db4f;
-  padding: 3%;
-  border: 1px solid #f0db4f;
-}
-
-form input[type="submit"],
-form input[type="button"] {
-    box-sizing: border-box;
-    width: 50%;
-    padding: 2%;
-    background: #AD0000;
-    border-bottom: 2px solid #860000;
-    border-top-style: none;
-    border-right-style: none;
-    border-left-style: none;
-    color: #fff;
-}
-
-form input[type="submit"]:hover,
-form input[type="button"]:hover {
-    background: #ff0000;
-    cursor: pointer;
-}
-
-form input.error {
-  border-color: red;
-}
-
-form input.success {
-  border-color: greenyellow
-}
-
-form small {
-  color: red;
-  margin-bottom: 2%;
-  visibility: visible;
-} */
-
 /* =================================
   Media Queries
 ==================================== */
