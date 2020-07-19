@@ -1,7 +1,6 @@
 <?php
 if (isset($_POST['Email'])) {
 
-    // EDIT THE 2 LINES BELOW AS REQUIRED
     $email_to = "mothm-n@protonmail.com";
     $email_subject = "Ask Mothman form submission";
 
@@ -67,7 +66,8 @@ if (isset($_POST['Email'])) {
     @mail($email_to, $email_subject, $email_message, $headers);
 ?>
 
-    <!-- include your success message below -->
+    <!-- include success message below -->
+    echo 'Message submitted successfully. Thank you';
 
     
 
