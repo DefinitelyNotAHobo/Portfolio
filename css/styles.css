@@ -26,7 +26,6 @@ h3 {
 nav {
   flex-direction: row;
   text-align: center;
-  padding: .25em;
   background-color: #fff;
   box-shadow: 0px 1px 10px black;
 }
@@ -108,13 +107,14 @@ footer {
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
+.blog-intro {
+  text-align: center;
+}
+
 .btn {
-  margin: 5px;
-  padding-left: 4em;
-  padding-right: 4em;
-  justify-content: space-between;
+  padding: .25em;
+  display: block;
   cursor: pointer;
-  width: 100%;
   text-align: center;
   text-transform: uppercase;
 }
@@ -165,7 +165,7 @@ footer {
 /* Image Styling */
 
 .main-img {
-  max-width: 50vw;
+  max-width: fit-content;
 }
 
 .action-img {
@@ -280,11 +280,6 @@ footer {
   animation-duration: 1.5s;
 }
 
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
@@ -384,11 +379,6 @@ label.fcf-label {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .fcf-btn {
-      transition: none;
-  }
-}
 
 .fcf-btn:hover {
   color: #212529;
@@ -453,12 +443,8 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
   }
 
   .btn {
-    margin: 5px;
-    padding: .25em;
-    justify-content: space-between;
     cursor: pointer;
-    padding-left: 3em;
-    padding-right: 3em;
+    padding: .5em 3em;
     text-align: center;
     text-transform: uppercase;
   }
