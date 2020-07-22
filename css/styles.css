@@ -80,31 +80,11 @@ footer {
   padding-right: 1em;
 }
 
-
 .head-img {
   max-width: 150px;
   border-radius: 50%;
   border: 2px solid white;
   transition: all .5s;
-}
-
-.head-img:hover {
-  /* Shakey main image */
-  animation: shake 0.25s;
-  animation-iteration-count: initial;
-}
-@keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
 .blog-intro {
@@ -169,9 +149,12 @@ footer {
 }
 
 .action-img {
+  display: block;
   margin: 1em;
-  max-width: 30vw;
-  align-self: flex-start;
+  max-width: 88vw;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
   border-radius: 5%;
 }
 
@@ -211,6 +194,10 @@ footer {
   margin: auto;
 }
 
+.slideshow.flex div img {
+  max-width: 80vw;
+  }
+
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
@@ -219,6 +206,8 @@ footer {
   width: auto;
   padding: 16px;
   margin-top: -30px;
+  margin-left: 20px;
+  margin-right: 20px;
   color: #fff;
   text-shadow: 0px 0px 2px black;
   font-weight: bold;
@@ -433,6 +422,39 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
 /* =================================
   Media Queries
 ==================================== */
+@media (max-width: 340px) {
+  .flex {
+    flex-direction: column;
+  }
+
+  footer.flex {
+    flex-direction: row;
+  }
+
+  .head-img {
+    max-width: 40vw;
+  }
+
+  h1 {
+    font-size: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    text-shadow: none;
+  }
+
+}
+
+
+@media (min-width: 500px) {
+  .action-img {
+    display: block;
+    max-width: 60vw;
+    border-radius: 5%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 @media (min-width: 800px) {
   .flex-nav {
@@ -460,9 +482,17 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
     display: flex;
     align-content: space-between;
   }
+
+  .action-img {
+    margin: 1em;
+    max-width: 30vw;
+    align-self: flex-start;
+    border-radius: 5%;
+  }
 }
 
-
-@media (min-width: 1025px) {
-
+@media (min-width: 900px) {
+  .action-img {
+    max-width: 18vw;
+  }
 }
