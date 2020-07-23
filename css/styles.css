@@ -18,10 +18,6 @@ h1 {
   text-shadow: 2px 2px 5px black;
 }
 
-h3 {
-  margin-block-start: .5em;
-  margin-block-end: .1em;
-}
 
 nav {
   flex-direction: row;
@@ -263,8 +259,6 @@ footer {
 
 /* Fading animation */
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
 }
@@ -288,11 +282,8 @@ footer {
 
 .fcf-input-group {
   position: relative;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -ms-flex-align: stretch;
   align-items: stretch;
   width: 100%;
 }
@@ -323,7 +314,6 @@ select.fcf-form-control[size], select.fcf-form-control[multiple] {
 }
 
 textarea.fcf-form-control {
-  font-family: -apple-system, Arial, sans-serif;
   height: auto;
 }
 
@@ -355,9 +345,6 @@ label.fcf-label {
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   background-color: transparent;
   border: 1px solid transparent;
