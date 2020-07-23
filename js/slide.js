@@ -1,3 +1,5 @@
+// javascript file that allows switching between images on a carousel
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
