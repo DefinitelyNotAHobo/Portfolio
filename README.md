@@ -10,7 +10,7 @@ Optional features
 Use of Flexbox  
 Collapsing menu  
 Javascript powered slideshow
-Media Query breakdown from one to multiple columns (mainly applies to Nav bar on each page and the content on the About page)
+Media Query breakdown from one to multiple columns (mainly applies to Nav bar on each page and the content on the About page)  
 Contact form (tests for proper formatting of email and has required fields but is for demonstration and doesn't actually submit anywhere due to security concerns)  
 
 Instructions for Running  
